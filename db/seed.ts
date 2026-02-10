@@ -43,7 +43,9 @@ export default async function seed() {
     };
   });
 
-  await db.insert(Episode).values(episodes).onConflictDoNothing();
+  if (episodes.length > 0) {
+    await db.insert(Episode).values(episodes).onConflictDoNothing();
+  }
 
   const hostsOrGuestsToInsert = [];
   const sponsorsForEpisodesToInsert = [];
@@ -73,13 +75,17 @@ export default async function seed() {
     }
   }
 
-  await db
-    .insert(HostOrGuest)
-    .values(hostsOrGuestsToInsert)
-    .onConflictDoNothing();
+  if (hostsOrGuestsToInsert.length > 0) {
+    await db
+      .insert(HostOrGuest)
+      .values(hostsOrGuestsToInsert)
+      .onConflictDoNothing();
+  }
 
-  await db
-    .insert(SponsorForEpisode)
-    .values(sponsorsForEpisodesToInsert)
-    .onConflictDoNothing();
+  if (sponsorsForEpisodesToInsert.length > 0) {
+    await db
+      .insert(SponsorForEpisode)
+      .values(sponsorsForEpisodesToInsert)
+      .onConflictDoNothing();
+  }
 }

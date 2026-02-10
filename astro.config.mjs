@@ -39,7 +39,7 @@ export default defineConfig({
         }),
         name: 'Inter',
         cssVariable: '--astro-font-inter',
-        weights: ['300 900'],
+        weights: ['300..900'],
         styles: ['normal'],
         subsets: ['latin']
       }

@@ -1,6 +1,14 @@
 import { htmlToText } from 'html-to-text';
 import parseFeed from 'rss-to-json';
-import { array, number, object, optional, parse, string } from 'valibot';
+import {
+  array,
+  number,
+  object,
+  optional,
+  parse,
+  string,
+  union
+} from 'valibot';
 
 import { optimizeImage } from './optimize-episode-image';
 import { dasherize } from '../utils/dasherize';
@@ -49,6 +57,21 @@ export async function getShowInfo() {
   return showInfo;
 }
 
+function parseDuration(duration: number | string): number {
+  if (typeof duration === 'number') {
+    return duration;
+  }
+
+  const parts = duration.split(':').map(Number);
+  if (parts.length === 3) {
+    return parts[0] * 3600 + parts[1] * 60 + parts[2];
+  }
+  if (parts.length === 2) {
+    return parts[0] * 60 + parts[1];
+  }
+  return 0;
+}
+
 let episodesCache: Array<Episode> | null = null;
 
 export async function getAllEpisodes() {
@@ -63,7 +86,7 @@ export async function getAllEpisodes() {
         published: number(),
         description: string(),
         content_encoded: optional(string()),
-        itunes_duration: number(),
+        itunes_duration: union([number(), string()]),
         itunes_episode: optional(number()),
         itunes_episodeType: string(),
         itunes_image: optional(object({ href: optional(string()) })),
@@ -107,7 +130,7 @@ export async function getAllEpisodes() {
             title: `${title}`,
             content: episodeContent,
             description: truncate(htmlToText(description), 260),
-            duration: itunes_duration,
+            duration: parseDuration(itunes_duration),
             episodeImage: itunes_image?.href,
             episodeNumber,
             episodeSlug,

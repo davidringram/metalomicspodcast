@@ -86,3 +86,37 @@ footer:has(+ #audio-player .player) {
 @utility section-heading-underlined {
   @apply section-heading dark:border-dark-border border-b pb-4;
 }
+
+/* Custom Metal Texture */
+.metal-texture {
+  background-color: #050505;
+  background-image: 
+    /* Distressed Noise Overlay */
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E"),
+    /* Grid Lines */
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px, 40px 40px, 40px 40px;
+  background-position: 0 0, -1px -1px, -1px -1px;
+}
+
+/* Optional: Add "Steel Tread" / Diamond Plate lines */
+.metal-tread {
+  background: 
+    linear-gradient(45deg, #111 25%, transparent 25%) -10px 0,
+    linear-gradient(-45deg, #111 25%, transparent 25%) -10px 0,
+    linear-gradient(45deg, transparent 75%, #111 75%),
+    linear-gradient(-45deg, transparent 75%, #111 75%);
+  background-size: 20px 20px;
+  background-color: #3f3e3e;
+}
+
+.stencil-text {
+  text-transform: uppercase;
+  color: #8b0000;
+  text-shadow: 2px 2px 0px #000;
+  /* Use a mask to create a "weathered" look */
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent), 
+                      url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+}
+

@@ -1,0 +1,166 @@
+
+> starpod@0.0.1 build
+> astro check && astro build --remote
+
+15:31:47 [WARN] [assets] No data found for font family Inter. Review your configuration
+15:31:47 [vite] Re-optimizing dependencies because vite config has changed
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+15:31:47 [content] Syncing content
+15:31:47 [content] Synced content
+15:31:47 [types] Generated 207ms
+15:31:47 [check] Getting diagnostics for Astro files in /Users/davidingram/Documents/Development/metalomics-site...
+[96mreproduce_issue.ts[0m:[93m2[0m:[93m48[0m - [93mwarning[0m[90m ts(6133): [0m'optional' is declared but its value is never read.
+
+[7m2[0m import { object, number, parse, string, array, optional, union } from 'valibot';
+[7m [0m [93m                                               ~~~~~~~~[0m
+
+Result (73 files): 
+- 0 errors
+- 0 warnings
+- 1 hint
+
+15:31:51 [WARN] [assets] No data found for font family Inter. Review your configuration
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+15:31:52 [content] Syncing content
+15:31:52 [content] Synced content
+15:31:52 [types] Generated 177ms
+15:31:52 [astro:db] database: remote
+15:31:52 [build] output: "static"
+15:31:52 [build] mode: "server"
+15:31:52 [build] directory: /Users/davidingram/Documents/Development/metalomics-site/dist/
+15:31:52 [build] adapter: @astrojs/vercel
+15:31:52 [build] Collecting build info...
+15:31:52 [build] ✓ Completed in 202ms.
+15:31:52 [build] Building server entrypoints...
+15:31:52 [WARN] [assets] No data found for font family Inter. Review your configuration
+15:31:52 [vite] Re-optimizing dependencies because vite config has changed
+15:31:52 [WARN] [assets] No data found for font family Inter. Review your configuration
+Found 2 warnings while optimizing generated CSS:
+
+Issue #1:
+[2m│ }[22m
+[2m│ @media (prefers-color-scheme: dark) {[22m
+[2m│[22m   @property --gradient-start {
+[2m┆[22m            [33m[2m^--[22m Unknown at rule: @property[39m
+[2m┆[22m
+[2m│     syntax: '<color>';[22m
+[2m│     inherits: false;[22m
+
+Issue #2:
+[2m│     initial-value: oklch(71.44% 0.019 264.45);[22m
+[2m│   }[22m
+[2m│[22m   @property --gradient-stop {
+[2m┆[22m            [33m[2m^--[22m Unknown at rule: @property[39m
+[2m┆[22m
+[2m│     syntax: '<color>';[22m
+[2m│     inherits: false;[22m
+
+15:31:53 [assets] Copying fonts (0 files)...
+15:31:53 [WARN] [vite] [esbuild css minify]
+▲ [WARNING] Expected percentage but found "entry" [css-syntax-error]
+
+    <stdin>:13:53908:
+      13 │ ...}}@keyframes toggle-vt-names{entry 0%{--should-vt:none}entry 1%...
+         ╵                                 ~~~~~
+
+
+▲ [WARNING] Expected "," but found "0%" [css-syntax-error]
+
+    <stdin>:13:53914:
+      13 │ ...eyframes toggle-vt-names{entry 0%{--should-vt:none}entry 1%,exi...
+         │                                   ~~
+         ╵                                   ,
+
+
+15:31:53 [vite] ✓ built in 1.20s
+15:31:53 [build] ✓ Completed in 1.27s.
+
+ building client (vite) 
+15:31:53 [WARN] [assets] No data found for font family Inter. Review your configuration
+15:31:53 [vite] Re-optimizing dependencies because vite config has changed
+15:31:53 [WARN] [assets] No data found for font family Inter. Review your configuration
+15:31:53 [vite] transforming...
+15:31:53 [assets] Copying fonts (0 files)...
+15:31:53 [vite] ✓ 46 modules transformed.
+15:31:53 [vite] rendering chunks...
+15:31:53 [vite] computing gzip size...
+15:31:53 [vite] dist/client/_astro/page.DMSz3rAU.js                                                   0.04 kB │ gzip: 0.06 kB
+15:31:53 [vite] dist/client/_astro/ShowArtwork.astro_astro_type_script_index_0_lang.CXiw7m3h.js       0.06 kB │ gzip: 0.08 kB
+15:31:53 [vite] dist/client/_astro/UFOIllustration.astro_astro_type_script_index_0_lang.BTQ8fkAy.js   0.08 kB │ gzip: 0.10 kB
+15:31:53 [vite] dist/client/_astro/404Illustration.astro_astro_type_script_index_0_lang.Ctsgjw1u.js   0.09 kB │ gzip: 0.11 kB
+15:31:53 [vite] dist/client/_astro/state.CsXWCbxb.js                                                  0.12 kB │ gzip: 0.12 kB
+15:31:53 [vite] dist/client/_astro/jsxRuntime.module.fOORsCCE.js                                      0.42 kB │ gzip: 0.30 kB
+15:31:53 [vite] dist/client/_astro/ContactForm.Nc3tfslT.js                                            1.06 kB │ gzip: 0.58 kB
+15:31:53 [vite] dist/client/_astro/PlayButton.DJAmIc6_.js                                             1.57 kB │ gzip: 0.83 kB
+15:31:53 [vite] dist/client/_astro/FullPlayButton.DLrloWZZ.js                                         1.60 kB │ gzip: 0.82 kB
+15:31:53 [vite] dist/client/_astro/client.BPCvqaPF.js                                                 2.29 kB │ gzip: 1.24 kB
+15:31:53 [vite] dist/client/_astro/index.DsCVbc-k.js                                                  2.63 kB │ gzip: 1.18 kB
+15:31:53 [vite] dist/client/_astro/hooks.module.BKHCj0z0.js                                           2.71 kB │ gzip: 1.19 kB
+15:31:53 [vite] dist/client/_astro/Player.D-BePdtg.js                                                 5.22 kB │ gzip: 1.86 kB
+15:31:53 [vite] dist/client/_astro/atropos.DZR9lnpr.js                                                6.82 kB │ gzip: 2.56 kB
+15:31:53 [vite] dist/client/_astro/signals.module.DudwLrti.js                                         7.82 kB │ gzip: 2.85 kB
+15:31:53 [vite] dist/client/_astro/preact.module.B5PsXcXZ.js                                         10.45 kB │ gzip: 4.46 kB
+15:31:53 [vite] dist/client/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CC1HFXGL.js     13.11 kB │ gzip: 4.54 kB
+15:31:53 [vite] ✓ built in 184ms
+
+ prerendering static routes 
+15:31:53 ▶ src/pages/404.astro
+15:31:53   └─ /404.html (+135ms) 
+15:31:53 ▶ src/pages/about.astro
+15:31:53   └─ /about/index.html (+2ms) 
+15:31:53 λ src/pages/about.html.md.ts
+15:31:53   └─ /about.html.md (+1ms) 
+15:31:53 λ src/pages/api/episodes/[page].json.ts
+15:31:53   └─ /api/episodes/1.json (+1ms) 
+15:31:53 ▶ src/pages/contact.astro
+15:31:53   └─ /contact/index.html (+2ms) 
+15:31:53 λ src/pages/episodes-index.html.md.ts
+15:31:53   └─ /episodes-index.html.md (+1ms) 
+15:31:53 ▶ src/pages/for-llms.astro
+15:31:53   └─ /for-llms/index.html (+3ms) 
+15:31:53 λ src/pages/for-llms.html.md.ts
+15:31:53   └─ /for-llms.html.md (+1ms) 
+15:31:53 λ src/pages/llms.txt.ts
+15:31:53   └─ /llms.txt (+1ms) 
+15:31:53 λ src/pages/robots.txt.ts
+15:31:53   └─ /robots.txt (+0ms) 
+15:31:53 ▶ src/pages/sponsor.astro
+15:31:53   └─ /sponsor/index.html (+2ms) 
+15:31:53 λ src/pages/[episode].html.md.ts
+15:31:53   ├─ /7.html.md (+3ms) 
+15:31:53   ├─ /ep7-the-role-of-dogma.html.md (+1ms) 
+15:31:53   ├─ /6.html.mdEntry transcripts → 6 was not found.
+ (+1ms) 
+15:31:53   ├─ /ep6-the-metal-economy-.html.mdEntry transcripts → 6 was not found.
+ (+1ms) 
+15:31:53   ├─ /5.html.mdEntry transcripts → 5 was not found.
+ (+1ms) 
+15:31:53   ├─ /ep5-dissecting-utility.html.mdEntry transcripts → 5 was not found.
+ (+1ms) 
+15:31:53   ├─ /4.html.mdEntry transcripts → 4 was not found.
+ (+1ms) 
+15:31:53   ├─ /ep4-citizen-economist-toolbox.html.mdEntry transcripts → 4 was not found.
+ (+1ms) 
+15:31:53   ├─ /3.html.mdEntry transcripts → 3 was not found.
+ (+1ms) 
+15:31:53   ├─ /ep3-what-is-money.html.mdEntry transcripts → 3 was not found.
+ (+1ms) 
+15:31:53   ├─ /2.html.mdEntry transcripts → 2 was not found.
+ (+1ms) 
+15:31:53   ├─ /ep-2-what-makes-economics-so-convoluted.html.mdEntry transcripts → 2 was not found.
+ (+1ms) 
+15:31:53   ├─ /1.html.mdEntry transcripts → 1 was not found.
+ (+1ms) 
+15:31:53   └─ /ep-1-what-is-economics.html.mdEntry transcripts → 1 was not found.
+ (+1ms) 
+Invalid URL
+  Location:
+    /Users/davidingram/Documents/Development/metalomics-site/node_modules/.pnpm/@astrojs+db@0.18.3/node_modules/@astrojs/db/dist/core/db-client/libsql-node.js:6:19
+  Stack trace:
+    at new URL (node:internal/url:827:25)
+    at file:///Users/davidingram/Documents/Development/metalomics-site/dist/server/pages/_episode_.astro.mjs?time=1770766313790:12:18
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async generatePages (file:///Users/davidingram/Documents/Development/metalomics-site/node_modules/.pnpm/astro@5.16.8_@types+node@24.9.1_@vercel+functions@2.2.13_jiti@2.6.1_lightningcss@1.30.2_d9378494ff57975a31c6b3537ebee3cd/node_modules/astro/dist/core/build/generate.js:91:30)
+    at async AstroBuilder.build (file:///Users/davidingram/Documents/Development/metalomics-site/node_modules/.pnpm/astro@5.16.8_@types+node@24.9.1_@vercel+functions@2.2.13_jiti@2.6.1_lightningcss@1.30.2_d9378494ff57975a31c6b3537ebee3cd/node_modules/astro/dist/core/build/index.js:157:5)
+    at async build (file:///Users/davidingram/Documents/Development/metalomics-site/node_modules/.pnpm/astro@5.16.8_@types+node@24.9.1_@vercel+functions@2.2.13_jiti@2.6.1_lightningcss@1.30.2_d9378494ff57975a31c6b3537ebee3cd/node_modules/astro/dist/core/build/index.js:45:3)
+    at async runCommand (file:///Users/davidingram/Documents/Development/metalomics-site/node_modules/.pnpm/astro@5.16.8_@types+node@24.9.1_@vercel+functions@2.2.13_jiti@2.6.1_lightningcss@1.30.2_d9378494ff57975a31c6b3537ebee3cd/node_modules/astro/dist/cli/index.js:210:7)
