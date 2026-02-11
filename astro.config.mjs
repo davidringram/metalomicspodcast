@@ -5,28 +5,12 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
 
+import netlify from '@astrojs/netlify';
+
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
-  adapter: vercel({
-    imageService: true,
-    imagesConfig: {
-      formats: ['image/avif'],
-      minimumCacheTTL: 3600,
-      remotePatterns: [
-        {
-          protocol: 'https'
-        },
-        {
-          protocol: 'http'
-        }
-      ],
-      sizes: [160, 320, 640, 1280]
-    },
-    webAnalytics: {
-      enabled: true
-    }
-  }),
+  adapter: netlify(),
   build: {
     inlineStylesheets: 'always'
   },
