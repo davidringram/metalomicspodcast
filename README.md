@@ -169,3 +169,4 @@ your `starpod.config.ts` and RSS feed:
 - `/{episode-number}.html.md` - Alternative episode URL
 
 No configuration needed - it just works!
+# metalomicspodcast
