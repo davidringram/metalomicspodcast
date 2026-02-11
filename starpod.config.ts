@@ -10,19 +10,23 @@ export default defineStarpodConfig({
       name: 'Josh Goddard',
       bio: 'Economics nerd and Marxist, but not a communist.', 
       img: 'josh.jpg',
-      github: 'https://github.com/joshgoddard',
-      twitter: 'https://x.com/joshgoddard',
+      email: 'mailto:josh@metalomics.com',
+      instagram: 'https://www.instagram.com/im_not_the_mess_officer/',
       website: 'https://joshgoddard.dev'
     },
     {
       name: 'David Ingram',
       bio: 'Lover of data, behavioral economics and a good drink.',
       img: 'david.jpg',
-      github: 'https://github.com/davidingram',
-      twitter: 'https://x.com/davidingram',
-      website: 'https://davidingram.dev'
+      email: 'mailto:davidingram.marketing@gmail.com',
+      instagram: 'https://www.instagram.com/davidringram',
+      website: 'https://davidingram.us'
     }
   ],
+  socials: {
+    instagram: 'https://www.instagram.com/metalomics/',
+    youtube: 'https://www.youtube.com/'
+  },
   platforms: {
     apple:
       'https://podcasts.apple.com/gb/podcast/metalomics/id1838027377',
@@ -34,3 +38,4 @@ export default defineStarpodConfig({
   },
   rssFeed: 'https://anchor.fm/s/108e8b5bc/podcast/rss'
 });
+

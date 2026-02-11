@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 
 import Layout from '../layouts/Layout.astro';
 import starpodConfig from '../../starpod.config';
+import Socials from '../components/Socials.astro';
 import LargePlatforms from '../components/LargePlatforms.astro';
 
 const { hosts } = starpodConfig;
@@ -24,9 +25,11 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
     <LargePlatforms />
 
+    <h2 class="section-heading-underlined mt-16 lg:mt-24">Connect with Metalomics</h2>
+<Socials />
+    
     <h2 class="section-heading-underlined mt-16 lg:mt-24">Meet the hosts</h2>
-
-    <div class="mt-9 pb-9 lg:mt-12">
+        <div class="mt-9 pb-9 lg:mt-12">
       {
         hosts.map((host, index) => (
           <div
@@ -49,21 +52,21 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
               <p class="mt-2 lg:mt-3">{host.bio}</p>
 
               <div class="mt-6 flex gap-4">
-                {host?.twitter && (
+                {host?.email && (
                   <a
                     class="animated-bottom-border text-light-text-heading font-bold after:mt-1 dark:text-white"
-                    href={host.twitter}
+                    href={host.email}
                   >
-                    Twitter
+                    Email
                   </a>
                 )}
 
-                {host?.github && (
+                {host?.instagram && (
                   <a
                     class="animated-bottom-border text-light-text-heading font-bold after:mt-1 dark:text-white"
-                    href={host.github}
+                    href={host.instagram}
                   >
-                    GitHub
+                    Instagram
                   </a>
                 )}
 

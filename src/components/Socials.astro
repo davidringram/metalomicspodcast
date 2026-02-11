@@ -1,0 +1,43 @@
+---
+import starpodConfig from '../../starpod.config';
+import InstagramIcon from '../svgs/instagram.svg?raw';
+import YoutubeIcon from '../svgs/youtube.svg?raw';
+
+const { socials  } = starpodConfig;
+---
+
+<div
+  class="mt-7 grid grid-cols-2 gap-6 lg:mt-11 lg:grid-cols-3 lg:justify-start"
+>
+  {
+    socials?.instagram && (
+      <a
+        class="animated-bottom-border text-light-text-heading font-bold after:mt-4 dark:text-white"
+        href={socials.instagram}
+      >
+        <span class="flex items-center">
+          Instagram
+          <span class="ml-3 flex h-4 w-4 items-center">
+            <Fragment set:html={InstagramIcon} />
+          </span>
+        </span>
+      </a>
+    )
+  }
+  {
+    socials?.youtube && (
+      <a
+        class="animated-bottom-border text-light-text-heading font-bold after:mt-4 dark:text-white"
+        href={socials.youtube}
+      >
+        <span class="flex items-center">
+          YouTube
+          <span class="ml-3 flex h-4 w-4 items-center">
+            <Fragment set:html={YoutubeIcon} />
+          </span>
+        </span>
+      </a>
+    )
+  }
+  
+</div>

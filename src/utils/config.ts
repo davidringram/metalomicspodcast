@@ -12,13 +12,13 @@ export type Host = {
    */
   img: string;
   /**
-   * A url to the host's GitHub
+   * A url to the host's email
    */
-  github?: string;
+  email?: string;
   /**
-   * A url to the host's Twitter
+   * A url to the host's Instagram
    */
-  twitter?: string;
+  instagram?: string;
   /**
    * A url to the host's website
    */
@@ -47,6 +47,13 @@ export type StarpodConfig = {
     overcast?: string;
     pocketCasts?: string;
     spotify?: string;
+    youtube?: string;
+  };
+  /**
+   * Links to the podcast's social media accounts.
+   */
+  socials?: {
+    instagram?: string;
     youtube?: string;
   };
   /**
