@@ -205,12 +205,12 @@ export function generateForLlmsMarkdown(
   for (const host of config.hosts) {
     markdown += `### ${host.name}\n\n`;
     markdown += `${host.bio}\n\n`;
-    if (host.website || host.github || host.twitter) {
+    if (host.website || host.email || host.instagram) {
       markdown += `**Links**: `;
       const links = [];
       if (host.website) links.push(`[Website](${host.website})`);
-      if (host.github) links.push(`[GitHub](${host.github})`);
-      if (host.twitter) links.push(`[Twitter](${host.twitter})`);
+      if (host.email) links.push(`[GitHub](${host.email})`);
+      if (host.instagram) links.push(`[Twitter](${host.instagram})`);
       markdown += links.join(' | ');
       markdown += `\n\n`;
     }
@@ -284,9 +284,9 @@ export function generateAboutMarkdown(
   for (const host of config.hosts) {
     markdown += `### ${host.name}\n\n`;
     markdown += `${host.bio}\n\n`;
-    if (host.website || host.github || host.twitter) {
-      if (host.twitter) markdown += `- Twitter: ${host.twitter}\n`;
-      if (host.github) markdown += `- GitHub: ${host.github}\n`;
+    if (host.website || host.email || host.instagram) {
+      if (host.instagram) markdown += `- Twitter: ${host.instagram}\n`;
+      if (host.email) markdown += `- GitHub: ${host.email}\n`;
       if (host.website) markdown += `- Website: ${host.website}\n`;
       markdown += `\n`;
     }

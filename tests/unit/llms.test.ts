@@ -151,7 +151,7 @@ describe('LLM Utilities', () => {
           name: 'Host One',
           bio: 'Bio one',
           img: 'host1.jpg',
-          twitter: 'https://twitter.com/host1'
+          instagram: 'https://instagram.com/host1'
         }
       ],
       platforms: {
@@ -384,8 +384,8 @@ describe('LLM Utilities', () => {
           name: 'Host One',
           bio: 'Bio one',
           img: 'host1.jpg',
-          github: 'https://github.com/host1',
-          twitter: 'https://twitter.com/host1',
+          email: 'mailto:host1@gmail.com',
+          instagram: 'https://instagram.com/host1',
           website: 'https://host1.com'
         }
       ],
@@ -435,8 +435,8 @@ describe('LLM Utilities', () => {
 
       expect(result).toContain('### Host One');
       expect(result).toContain('Bio one');
-      expect(result).toContain('https://github.com/host1');
-      expect(result).toContain('https://twitter.com/host1');
+      expect(result).toContain('mailto:host1@gmail.com');
+      expect(result).toContain('https://instagram.com/host1');
       expect(result).toContain('https://host1.com');
     });
 
@@ -468,7 +468,7 @@ describe('LLM Utilities', () => {
           name: 'Host One',
           bio: 'Bio one',
           img: 'host1.jpg',
-          twitter: 'https://twitter.com/host1'
+          instagram: 'https://twitter.com/host1'
         }
       ],
       platforms: {

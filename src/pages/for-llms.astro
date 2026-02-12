@@ -54,7 +54,7 @@ if (episodes.length > 0) {
               {host.name}
             </h3>
             <p class="mt-2">{host.bio}</p>
-            {(host.website || host.github || host.twitter) && (
+            {(host.website || host.email || host.instagram) && (
               <div class="mt-2">
                 <strong>Links: </strong>
                 {host.website && (
@@ -68,23 +68,23 @@ if (episodes.length > 0) {
                     {' | '}
                   </>
                 )}
-                {host.github && (
+                {host.email && (
                   <>
                     <a
-                      href={host.github}
+                      href={host.email}
                       class="animated-bottom-border text-light-text-heading font-bold after:mt-1 dark:text-white"
                     >
-                      GitHub
+                      Email
                     </a>
                     {' | '}
                   </>
                 )}
-                {host.twitter && (
+                {host.instagram && (
                   <a
-                    href={host.twitter}
+                    href={host.instagram}
                     class="animated-bottom-border text-light-text-heading font-bold after:mt-1 dark:text-white"
                   >
-                    Twitter
+                    Instagram
                   </a>
                 )}
               </div>

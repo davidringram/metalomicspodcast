@@ -3,8 +3,6 @@ import db from '@astrojs/db';
 import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
-import vercel from '@astrojs/vercel';
-
 import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
