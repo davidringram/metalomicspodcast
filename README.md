@@ -1,7 +1,7 @@
 # 🎙️ Metalomics Podcast
 
-> \_This isn't your average podcast. Metalomics is a sonic assault on
-> intellectual laziness.
+> This isn't your average podcast. Metalomics is a sonic assault on intellectual
+> laziness.
 
 ---
 
