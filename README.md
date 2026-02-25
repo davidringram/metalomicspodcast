@@ -25,7 +25,7 @@ Metalomics isn't just another marketing podcast. We dive deep into:
 
 - **Official Website:** [metalomicspodcast.com](https://metalomicspodcast.com)
 - **Host:** [Josh Goddard](https://www.instagram.com/im_not_the_mess_officer/) &
-  [David R. Ingram](https:davidringram.com)
+  [David R. Ingram](https://www.davidringram.com)
 - **Instagram:** [Follow for Updates](https://www.instagram.com/metalomics/)
 
 ---
