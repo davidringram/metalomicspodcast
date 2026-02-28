@@ -8,24 +8,24 @@ export default defineStarpodConfig({
   hosts: [
     {
       name: 'Josh Goddard',
-      bio: 'Economics nerd and Marxist, but not a communist.', 
+      bio: 'Loves cats and wants economics reverted to political economy.', 
       img: 'josh.jpg',
       email: 'mailto:josh@metalomics.com',
       instagram: 'https://www.instagram.com/im_not_the_mess_officer/',
-      website: 'https://joshgoddard.dev'
+      website: ''
     },
     {
       name: 'David Ingram',
-      bio: 'Lover of data, behavioral economics and a good drink.',
+      bio: 'Marketing and data nerd who prefers to be outdoors with a banjo.',
       img: 'david.jpg',
       email: 'mailto:davidingram.marketing@gmail.com',
       instagram: 'https://www.instagram.com/davidringram',
-      website: 'https://davidingram.us'
+      website: 'https://davidringram.com'
     }
   ],
   socials: {
     instagram: 'https://www.instagram.com/metalomics/',
-    youtube: 'https://www.youtube.com/'
+    youtube: ''
   },
   platforms: {
     apple:
