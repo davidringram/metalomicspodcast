@@ -7,6 +7,10 @@ export type Host = {
    * A bio about the host to display
    */
   bio: string;
+  favband?: string;
+  favecon?: string;
+  favbook?: string;
+  loves?: string;
   /**
    * A url to an image to use for the host
    */
