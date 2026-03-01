@@ -31,5 +31,5 @@ Metalomics isn't just another marketing podcast. We dive deep into:
 ---
 
 <p align="center">
-  Built with <b>Astro</b> | Deployed on <b>Netlify</b>
+  Built with <b>Astro</b> | Deployed on <b>Netlify</b>npm
 </p>

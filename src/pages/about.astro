@@ -49,7 +49,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
                 {host.name}
               </h3>
 
-              <p class="mt-2 lg:mt-3">{host.bio}</p>
+              <p class="mt-2 lg:mt-3"><strong>{host.bio}</strong><br /><strong>Favorite Band: </strong>{host.favband}<br /><strong>Favorite Economist: </strong>{host.favecon}<br /><strong>Favorite Book: </strong>{host.favbook}<br /><strong>Loves: </strong>{host.loves}</p>
 
               <div class="mt-6 flex gap-4">
                 {host?.email && (
